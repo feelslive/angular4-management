@@ -20,7 +20,7 @@
 脚手架版本：[Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
 ### 安装项目依赖 cd manblog `npm install`  
-### 安装项目依赖 cd jsonserve `npm install`  
+### 安装服务依赖 cd jsonserve `npm install`  
 
 
 ### 启动项目 `ng serve`   http://localhost:4200/
