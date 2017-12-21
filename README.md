@@ -42,7 +42,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 ## 打包  `ng build`
 ## 打包完成后，运行打包文件，报错404，js，css未找到。
-## 解决办法：修改index.html中的<base href='/'>,改成<base href='./'>
+## 解决办法：修改index.html中的`<base href='/'>,改成<base href='./'>`
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
