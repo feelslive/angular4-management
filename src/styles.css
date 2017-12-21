@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+.flash-messages .alert p {
+	margin-bottom: 0;
+	line-height: 40px;
+	text-align: center;
+}
+.flash-messages .alert {
+	padding:0;
+	margin:0;
+}
+.flash-messages {
+	height: 40px;
+	overflow: hidden;
+}
+.flash-messages .alertfrom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	display: block;
+}

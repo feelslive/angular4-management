@@ -1,0 +1,40 @@
+
+<div class="row">
+	<div class="col-md-6">
+		<h2><i class="fa fa-users"></i>用户信息</h2>
+	</div>
+	<div class="col-md-6">
+		<h4 class="pull-right text-muted">年龄总和:{{total + "岁"}}</h4>
+	</div>
+</div>
+
+<table *ngIf="users?.length>0;else nousers" class="table table-striped">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>姓名</th>
+			<th>邮箱</th>
+			<th>年龄</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let user of users">
+			<td>{{user.id}}</td>
+			<td>{{user.name}}</td>
+			<td>{{user.email}}</td>
+			<td>{{user.age  + "岁"}}</td>
+			<td><a href="#" 
+				[routerLink]="['/user/'+user.id]"
+				class="btn btn-secondary btn-sm"
+				>
+				<i class="fa fa-arrow-circle-o-right"></i>
+			详情</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<ng-template #nousers>
+	<hr>
+	<h5>还没有数据</h5>
+</ng-template>

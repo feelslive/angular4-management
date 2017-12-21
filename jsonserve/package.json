@@ -1,0 +1,15 @@
+{
+  "name": "jsonserve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "v": "json-server --watch db.json",
+    "jv": "json-server http://jsonplaceholder.typicode.com/db"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.12.1"
+  }
+}
